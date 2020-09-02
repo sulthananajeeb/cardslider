@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>card slider</title>
+    <link  rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat:wght@300&family=Roboto:ital@1&family=Volkhov&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                        <div class="swiper-slide">
+                                <div class="card">
+                                        <div class="class-img">
+                                            <img src="images/image11.jpeg" alt="card image">
+                                        <ul class="img-tags">
+                                            <li>WEBSITE</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        </div>
+                                            <div class="card-info">
+                                                <h4 class="card-title">wed diary</h4>
+                                                <p>Wix Offers Free Website Creation
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    
+                                                </p>
+                                                <a href="" class="card-btn">Read more</a>      
+                                            </div>
+                            
+                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="card">
+                                        <div class="class-img">
+                                            <img src="images/image2.jpeg" alt="card image">
+                                        <ul class="img-tags">
+                                            <li>WEBSITE</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                 </div>
+                            <div class="card-info">
+                                                <h4 class="card-title">wed diary</h4>
+                                                <p>Wix Offers Free Website Creation
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    
+                                                </p>
+                                                <a href="" class="card-btn">Read more</a>      
+                            </div>
+                            </a>
+                            
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                    <div class="class-img">
+                                        <img src="images/image2.jpeg" alt="card image">
+                                    <ul class="img-tags">
+                                        <li>WEBSITE</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                    </div>
+                                        <div class="card-info">
+                                            <h4 class="card-title">wed diary</h4>
+                                            <p>Wix Offers Free Website Creation
+                                                Tools Along with Advanced
+                                                Features to Make Your Site Pop.
+                                                Tools Along with Advanced
+                                                Features to Make Your Site Pop.
+                                                
+                                            </p>
+                                            <a href="" class="card-btn">Read more</a>      
+                                        </div>
+                        
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                                <div class="card">
+                                        <div class="class-img">
+                                            <img src="images/index.jpeg" alt="card image">
+                                        <ul class="img-tags">
+                                            <li>WEBSITE</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        </div>
+                                            <div class="card-info">
+                                                <h4 class="card-title">wed diary</h4>
+                                                <p>Wix Offers Free Website Creation
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    
+                                                </p>
+                                                <a href="" class="card-btn">Read more</a>      
+                                            </div>
+                            
+                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                                <div class="card">
+                                        <div class="class-img">
+                                            <img src="images/index.jpeg" alt="card image">
+                                        <ul class="img-tags">
+                                            <li>WEBSITE</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        </div>
+                                            <div class="card-info">
+                                                <h4 class="card-title">wed diary</h4>
+                                                <p>Wix Offers Free Website Creation
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    Tools Along with Advanced
+                                                    Features to Make Your Site Pop.
+                                                    
+                                                </p>
+                                                <a href="" class="card-btn">Read more</a>      
+                                            </div>
+                            
+                                </div>
+                        </div>
+             
+            
+            </div>
+      
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-main"></div>
+            <div class="swiper-button-next swiper-main "></div>
+          
+          
+        </div>
+        
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>//initialize swipwer
+
+        var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop:true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 320px
+        440: {
+        slidesPerView:1,
+        spaceBetween: 0
+        },
+        // when window width is >= 480px
+        780: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        // when window width is >= 640px
+        1000: {
+        slidesPerView: 3,
+        spaceBetween: 10
+        }
+    },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+    </script>
+</body>
+</html>
